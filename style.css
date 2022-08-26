@@ -8,18 +8,87 @@ body  {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Annie Use Your Telescope", cursive;
+  background-color: #fac9b8;
+  color: #495159;
+}
+
+.img {
+  margin-right: auto;
+  margin-bottom: -450px;
+  display: flex;
 }
 
 #container {
   display: grid;
-  /* grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), minmax(0, 2fr)); */
-  border-width: 6px 100px 0;
-  border: solid #ed6b86;
+  border: solid #C5DECD;
+  border-width: 100px;
   
+}
+
+.all-btns {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 85px;
+  margin-top: -800px;
+  flex-direction: column;
+}
+
+.color-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .size-btns {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: #495159;
+}
+
+/* input color wheel decorations */
+input {
+  width: 80px;
+  height:  80px;
+  border: none;
+  border-radius: 100%;
+}
+
+input::-webkit-color-swatch-wrapper {
+  padding: 0%;
+}
+
+input::-webkit-color-swatch {
+  border-radius: 50px;
+  border: none;
+}
+
+input:hover {
+  transform:scale(1.05);
+}
+
+/* footer */
+.footer {
+  background-color: #E5D4C0;
+  margin-top: 1px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  margin-left: -8px;
+  margin-bottom: -100px;
+  text-align: center;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg);
+}
+
+.fa-github {
+  color: white;
+  transition: transform 0.3s ease-in-out;
 }

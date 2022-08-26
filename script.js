@@ -5,6 +5,9 @@ const body = document.body
     const container = document.createElement("div");
     container.setAttribute("id", "container");
     body.append(container);
+    const allBtns = document.createElement("div");
+    allBtns.setAttribute("class", "all-btns");
+    body.append(allBtns)
 
 //grid
 container.style.width = "650px";
@@ -41,18 +44,34 @@ function inkColor(e){
   
   if (color == "rainbow"){
     this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-  }else if (color == "white"){
-    this.style.backgroundColor = "white"
-  }else{
+  }else if (color == "#fac9b8"){
+    this.style.backgroundColor = "#fac9b8"
+  }else if (color == "black"){
     this.style.backgroundColor = "black"
+  }else{
+    this.style.backgroundColor = `${color}`;
   }
 }
 
 //color buttons
 const colorButtons = document.createElement("div");
 
-body.append(colorButtons);
+allBtns.append(colorButtons)
 colorButtons.setAttribute("class", "color-btns");
+
+let hColor = document.createElement("h2");
+colorTxt = document.createTextNode("Grid Color");
+hColor.setAttribute("class", "color-txt");
+hColor.appendChild(colorTxt);
+colorButtons.appendChild(hColor);
+
+let colorWheel = document.createElement("input");
+colorWheel.setAttribute("type", "color");
+colorWheel.setAttribute("class", "wheel");
+colorButtons.appendChild(colorWheel);
+colorWheel.addEventListener("input", () => {
+  color = colorWheel.value;
+})
 
 let colorBlack = document.createElement("button");
 colorBlack.setAttribute("class", "color-black");
@@ -74,14 +93,21 @@ eraser.setAttribute("class", "eraser");
 eraser.innerHTML = "Eraser"
 colorButtons.appendChild(eraser);
 eraser.addEventListener("click", (e) => {
-  color = "white"
+  color = "#fac9b8"
 });
 
 //grid size buttons
 const buttons = document.createElement("div");
 
-body.append(buttons);
+allBtns.append(buttons);
 buttons.setAttribute("class", "size-btns");
+
+let hSize = document.createElement("h2");
+sizeTxt = document.createTextNode("Grid Size");
+hSize.setAttribute("class", "size-txt");
+hSize.appendChild(sizeTxt);
+buttons.appendChild(hSize);
+
 
 let small = document.createElement("button");
 small.setAttribute("class", "sml");
@@ -112,7 +138,7 @@ function restart() {
   const gridItems = document.querySelectorAll('.grid-item');
 
   gridItems.forEach((item) => {
-    item.style.backgroundColor = "white";
+    item.style.backgroundColor = "#fac9b8";
   });
 }
 
