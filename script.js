@@ -31,8 +31,11 @@ makeGrid(16)
 
 //hold mousedown to draw
 let isMouseDown = false;
-document.body.onmousedown = () => (isMouseDown = true);
-document.body.onmouseup = () => (isMouseDown = false);
+document.body.onmousedown = (e) => {
+  isMouseDown = true;
+  e.preventDefault();
+};
+document.body.onmouseup = (e) => (isMouseDown = false);
 
 //color function
 function setColor(colorChoice){
