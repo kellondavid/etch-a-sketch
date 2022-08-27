@@ -12,11 +12,12 @@ body  {
   background-color: #fac9b8;
   color: #495159;
   min-height: 100vh;
+  margin-top: -150px;
 }
 
 .img {
-  margin-right: 750px;
-  margin-bottom: -165px;
+  margin-right: 700px;
+  margin-bottom: 90px;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -27,16 +28,17 @@ body  {
   border: solid #C5DECD;
   border-width: 70px;
   border-radius: 25px;
-  flex-grow: 1;
+  margin-bottom: -250px;
 }
 
 .all-btns {
   display: flex;
   gap: 10px;
   margin-left: auto;
-  margin-right: 150px;
-  margin-top: -630px;
+  margin-right: 400px;
+  margin-top: -380px;
   flex-direction: column;
+  margin-bottom: -200px;
 }
 
 
@@ -104,7 +106,7 @@ input:hover {
   margin-top: 1px;
   padding-bottom: 4px;
   padding-top: 15px;
-  margin-bottom: -300px;
+  margin-bottom: -50px;
 }
 
 .fa-github:hover {
