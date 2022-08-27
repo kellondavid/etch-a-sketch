@@ -40,7 +40,7 @@ function setColor(colorChoice){
 }
 
 function inkColor(e){
-  if (!isMouseDown) return;
+  if (e.type === 'mouseover' && !isMouseDown) return;
   
   if (color == "rainbow"){
     this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
