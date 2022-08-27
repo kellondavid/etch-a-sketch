@@ -11,34 +11,42 @@ body  {
   font-family: "Annie Use Your Telescope", cursive;
   background-color: #fac9b8;
   color: #495159;
+  min-height: 100vh;
 }
 
 .img {
-  margin-right: auto;
-  margin-bottom: -450px;
+  margin-right: 750px;
+  margin-bottom: -165px;
   display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 #container {
   display: grid;
   border: solid #C5DECD;
-  border-width: 100px;
-  
+  border-width: 70px;
+  border-radius: 25px;
+  flex-grow: 1;
 }
 
 .all-btns {
   display: flex;
   gap: 10px;
   margin-left: auto;
-  margin-right: 85px;
-  margin-top: -800px;
+  margin-right: 150px;
+  margin-top: -630px;
   flex-direction: column;
 }
+
+
+
 
 .color-btns {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 
 .size-btns {
@@ -46,10 +54,21 @@ body  {
   gap: 10px;
   align-items: center;
   flex-direction: column;
+  margin-top: 10px;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 100px;
 }
 
 h2 {
   color: #495159;
+}
+
+button:hover {
+  transform:scale(1.15);
 }
 
 /* input color wheel decorations */
@@ -58,6 +77,7 @@ input {
   height:  80px;
   border: none;
   border-radius: 100%;
+  margin-left: 12px;
 }
 
 input::-webkit-color-swatch-wrapper {
@@ -76,12 +96,15 @@ input:hover {
 /* footer */
 .footer {
   background-color: #E5D4C0;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
   margin-top: 1px;
   padding-bottom: 4px;
-  padding-top: 4px;
-  margin-left: -8px;
-  margin-bottom: -100px;
-  text-align: center;
+  padding-top: 15px;
+  margin-bottom: -300px;
 }
 
 .fa-github:hover {
@@ -89,6 +112,6 @@ input:hover {
 }
 
 .fa-github {
-  color: white;
+  color: black;
   transition: transform 0.3s ease-in-out;
 }

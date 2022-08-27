@@ -74,7 +74,7 @@ colorWheel.addEventListener("input", () => {
 })
 
 let colorBlack = document.createElement("button");
-colorBlack.setAttribute("class", "color-black");
+colorBlack.setAttribute("class", "color-black btn btn-outline-dark btn-lg download-button");
 colorBlack.innerHTML = "Black"
 colorButtons.appendChild(colorBlack);
 colorBlack.addEventListener("click", (e) => {
@@ -82,14 +82,14 @@ colorBlack.addEventListener("click", (e) => {
 });
 
 let colorRainbow = document.createElement("button");
-colorRainbow.setAttribute("class", "rainbow");
+colorRainbow.setAttribute("class", "rainbow btn btn-outline-info btn-lg download-button");
 colorRainbow.innerHTML = "Rainbow"
 colorButtons.appendChild(colorRainbow);
 colorRainbow.addEventListener("click", (e) => {
   color = "rainbow"
 });
 let eraser = document.createElement("button");
-eraser.setAttribute("class", "eraser");
+eraser.setAttribute("class", "eraser btn btn-outline-light btn-lg download-button");
 eraser.innerHTML = "Eraser"
 colorButtons.appendChild(eraser);
 eraser.addEventListener("click", (e) => {
@@ -110,7 +110,7 @@ buttons.appendChild(hSize);
 
 
 let small = document.createElement("button");
-small.setAttribute("class", "sml");
+small.setAttribute("class", "sml btn btn-dark btn-lg download-button");
 small.innerHTML = "Small";
 buttons.appendChild(small);
 small.addEventListener("click", () => {
@@ -118,7 +118,7 @@ small.addEventListener("click", () => {
 })
 
 let medium = document.createElement("button");
-medium.setAttribute("class", "med");
+medium.setAttribute("class", "med btn btn btn-dark btn-lg download-button");
 medium.innerHTML = "Medium";
 buttons.appendChild(medium);
 medium.addEventListener("click", () => {
@@ -126,7 +126,7 @@ medium.addEventListener("click", () => {
 })
 
 let large = document.createElement("button");
-large.setAttribute("class", "lg");
+large.setAttribute("class", "lg btn btn btn-dark btn-lg download-button");
 large.innerHTML = "Large";
 buttons.appendChild(large);
 large.addEventListener("click", () => {
@@ -143,8 +143,8 @@ function restart() {
 }
 
 let reset = document.createElement("button");
-reset.setAttribute("class", "reset");
+reset.setAttribute("class", "reset btn btn btn-danger btn-lg download-button");
 reset.innerHTML = "Reset";
 buttons.appendChild(reset);
-
 reset.addEventListener("click", restart);
+
