@@ -41,9 +41,6 @@ body  {
   margin-bottom: -200px;
 }
 
-
-
-
 .color-btns {
   display: flex;
   flex-direction: column;
@@ -116,4 +113,20 @@ input:hover {
 .fa-github {
   color: black;
   transition: transform 0.3s ease-in-out;
+}
+
+/* scalability for 1440px displays */
+@media (max-width: 1440px) {
+  .img {
+    margin-bottom: -125px;
+  }
+  .all-btns {
+    margin-right: 15%;
+  }
+  h1 {
+    margin-top: 150px;
+  }
+  .footer{
+    margin-bottom: -250px;
+  }
 }
