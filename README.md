@@ -1,5 +1,7 @@
 live: https://kellondavid.github.io/etch-a-sketch/
 
+Note: Project was made on a 24in monitor. Display might not be the same on other monitors
+
 Odin Project's Etch-a-Sketch assignment
 
 General thoughts:
