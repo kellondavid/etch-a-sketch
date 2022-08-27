@@ -30,9 +30,9 @@ function makeGrid(size) {
 makeGrid(16)
 
 //hold mousedown to draw
-let isMouseDown;
-document.addEventListener('mousedown', () => isMouseDown = true);
-document.addEventListener('mouseup', () => isMouseDown = false);
+let isMouseDown = false;
+document.body.onmousedown = () => (isMouseDown = true);
+document.body.onmouseup = () => (isMouseDown = false);
 
 //color function
 function setColor(colorChoice){
