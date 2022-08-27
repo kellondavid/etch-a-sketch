@@ -1,4 +1,5 @@
 live: https://kellondavid.github.io/etch-a-sketch/
+
 Odin Project's Etch-a-Sketch assignment
 
 General thoughts:
