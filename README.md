@@ -1,4 +1,6 @@
-live: https://kellondavid.github.io/etch-a-sketch/
+LIVE: https://kellondavid.github.io/etch-a-sketch/
+
+![finished-product](https://github.com/kellondavid/etch-a-sketch/blob/main/images/sample.png?raw=true)
 
 Note: Project was made to be responsive on 24in (1915px) and 13in (1440px width) monitors. Display may not be the same on other monitors.
 
@@ -14,3 +16,4 @@ What I learned:
   - how to use mousedown + mousehover eventlisteners
   - how to use mediaquery for responsive web design
   - learned the purpose of e.preventDefault()
+ 
